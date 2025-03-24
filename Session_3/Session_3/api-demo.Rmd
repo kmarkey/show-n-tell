@@ -1,0 +1,267 @@
+---
+title: "APIs"
+subtitle: "Show & Tell Session 3"
+format: 
+  revealjs:
+    theme: style/prescustom.scss
+    fig-dpi: 600
+    
+editor: source
+execute: 
+  echo: true
+  warning: false
+---
+
+## Intro
+
+-   A lot of the data we want is online
+-   A web API provides an established pathway to retrieve the data
+
+## Today's Agenda
+
+APIs!
+
+-   Minimal Example
+-   Census API with `censusAPI` package
+-   Using an API in the wild
+
+In order to run this file, you'll need to go get your own API keys from the Census Bureau and the FRED!
+```{r setup}
+#| echo: false
+# source(here::here('api-keys.R'))
+my_census_key <- "your_api_code_here"
+my_fred_key <- "your_api_key_here"
+
+library(rjson)
+library(censusapi)
+library(dplyr)
+library(kableExtra)
+```
+
+##
+
+![](img/what-is-an-api.svg)
+
+## Using APIs
+
+-   A web API serves as an intermediary between a user/program and a server/dataset. When you use an API to get data from a server, you send an API call, which normally just looks like a url, specifying the details of the data you need. The server end processes the API call, facilitating the retrieval of the data that gets sent back to the client.
+
+-   Every API is different, so there is always documentation on how to use the API
+
+-   An API is just one way to get data from the web
+
+## Why would I use an API?
+
+-   I need current data fast
+-   I need a lot of files
+-   I want a specific subset of the data
+
+<!-- I am not an expert in making API calls. Luckily for me, other developers have created packages in R that do this for me! -->
+
+<!-- Disclaimer: We never want to give off the impression that we magically know things and remember everything about R. We learned all this info from online sources which have been compiled by very generous people who want to contribute to our learning! https://www.hrecht.com/censusapi/articles/getting-started.html -->
+
+## How old are you? [Agify.io](https://agify.io/)
+
+```{r}
+url <- "https://api.agify.io?name=keaton"
+
+response <- httr::GET(url)
+
+summary(response)
+
+httr::content(response, as = "parsed")
+
+```
+
+## Census Data API
+
+[Documentation](https://www.census.gov/data/developers.html)
+
+We can also use specific R packages designed to interface with an API
+
+  -   Help you craft and manage an api request
+  -   provide other useful information about the api
+
+## listCensusApis()
+
+```{r}
+metadata <- listCensusApis()
+
+metadata %>%
+  
+  select(title, type, url, name) %>%
+  
+  head()
+```
+
+## Let's get the 2022 ACS 5-year Estimates survey
+
+I can use these functions to look at some more options for my request
+
+```{r}
+acs_vars <- listCensusMetadata(name = "acs/acs5",
+                   vintage = 2022,
+                   type = "variables")
+
+acs_geos <- listCensusMetadata(name = "acs/acs5",
+                   vintage = 2022,
+                   type = "geography")
+```
+
+## Make the request
+
+I will note the variables names for my variables of interest:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{r}
+
+all_counties <- getCensus(
+  name = "acs/acs5",
+  key = my_census_key,
+  vars = c("NAME", "B19001B_014E"), # median household income
+  region = "county:*",
+  vintage = 2022, 
+  show_call = TRUE)
+
+```
+
+:::
+
+::: {.column width="50%"}
+```{r}
+ga_counties <- getCensus(
+  name = "acs/acs5",
+  key = my_census_key,
+  vars = c("NAME", "group(B15002)"), # population totals
+  region = "county:*",
+  regionin = "state:13",
+  vintage = 2022,
+  show_call = TRUE)
+```
+
+:::
+
+::::
+
+```{r}
+head(ga_counties)
+```
+
+
+## Some cleaning
+
+```{r}
+data_dictionary <- acs_vars %>% filter(group == "B15002")
+
+ga_counties_new <- ga_counties %>%
+  rename_at(vars(data_dictionary$name), ~ data_dictionary$label) %>% # using data dictionary, relabel cols for clarity
+  janitor::clean_names() %>%
+  select_if(~ !any(is.na(.))) %>% # removes cols where all entries are NA
+  select(state, county, name, starts_with("estimate_total"))
+
+head(ga_counties_new)
+```
+
+## FRED API {auto-animate=true}
+
+Here, we'll build the url from scratch using the documentation to get data from the FRED via their API
+
+I like the `glue` package for building urls and joining strings together
+
+```{r}
+glue::glue("Hello, {name}!", name = "Keaton")
+
+```
+
+## Example {auto-animate=true}
+
+[Documentation](https://fred.stlouisfed.org/docs/api/fred/)
+
+  - base url
+  - parameters
+    -   series_id
+    -   api_key
+    -   file_type
+    
+```{r}
+url <- "https://api.stlouisfed.org/fred/series/observations?series_id=UNRATE&api_key=7c3f6264728f8dc8738fc39a05f32e08"
+
+print(url)
+```
+
+## Reformat with `glue` {auto-animate=true}
+
+```{r}
+  url <-
+    glue::glue(
+      "https://api.stlouisfed.org/fred/series/observations?series_id={series_id}&observation_start=2018-01-01&observation_end=2024-01-01&api_key=7c3f6264728f8dc8738fc39a05f32e08&file_type=json",
+      series_id = "UNRATE"
+    )
+
+print(url)
+
+```
+
+## Wrap it in a function {auto-animate=true}
+
+```{r}
+get_fred <- function(series_id) {
+  
+    url <-
+    glue::glue(
+      "https://api.stlouisfed.org/fred/series/observations?series_id={series_id}&observation_start=2018-01-01&observation_end=2024-01-01&api_key=7c3f6264728f8dc8738fc39a05f32e08&file_type=json",
+      series_id = series_id
+    )
+    
+  response <- jsonlite::fromJSON(url)
+
+  obs <- response$observations
+  
+  return(obs)
+
+}
+```
+
+```{r}
+data <- get_fred(series_id = "UNRATE")
+
+head(data)
+```
+
+## Loop over multiple ids {auto-animate=true}
+
+```{r}
+ids <- c("UNRATE", "CGBD2024", "CGBD2534")
+
+for (id in ids) {
+  
+  print(id)
+  
+  data <- get_fred(series_id = id)
+  
+  assign(id, data) # equal to id <- data, but I can't write that
+  
+}
+
+head(CGBD2024)
+```
+
+<!-- ## The Nations's Report Card -->
+
+<!-- [Documentation](https://www.nationsreportcard.gov/api_documentation.aspx) -->
+
+<!-- ```{r} -->
+<!-- url <- "https://www.nationsreportcard.gov/DataService/GetAdhocData.aspx?type=data&subject=reading&grade=4&subscale=RRPCM&jurisdiction=NT,AL,AR,DE,FL,GA,KY,LA,MD,MS,NC,OK,SC,TN,TX,SC,VA,WV&variable=TOTAL&stattype=MN:MN,ALC:AB&Year=2005,2007,2009,2011,2013,2015,2017,2019,2022" -->
+
+<!-- response <- httr::GET(url) -->
+
+<!-- data <- rawToChar(response$content) %>% -->
+<!--     jsonlite::fromJSON() -->
+
+<!-- nrc <- data$result -->
+
+<!-- head(nrc) -->
+
+<!-- ``` -->

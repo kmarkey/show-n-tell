@@ -1,0 +1,304 @@
+---
+title: "Maps, Dashboards, and Interactivity"
+subtitle: "Show & Tell Session 2"
+format: 
+  revealjs:
+    theme: style/prescustom.scss
+    fig-dpi: 600
+    
+editor: source
+execute: 
+  echo: true
+  warning: false
+---
+
+## Intro
+
+We work with states!
+
+Dashboards can pack a lot of information into a small space.
+
+Interactivity adds context, and give users agency.
+
+## Today's agenda:
+
+-   Maps
+    -   usmap
+    -   tidycensus
+    -   sf
+-   Dashboards
+    -   quarto
+    -   plotly
+    -   crosstalk
+    -   Shiny
+
+```{r}
+#| label: setup
+#| echo: false
+
+suppressPackageStartupMessages({
+  library(tidyverse)
+  library(usmap)
+  library(tidycensus)
+  library(sf)
+  library(plotly)
+})
+
+options(tigris_use_cache = TRUE)
+```
+
+# Maps
+
+## Major U.S. Cities 
+
+```{r}
+#| echo: false
+
+citypop <- usmap::citypop %>%
+  select(-state)
+
+```
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{r}
+head(citypop)
+```
+
+:::
+
+::: {.column width="50%"}
+
+```{r}
+# Getting populations dataset without AL and HI
+citypops <- citypop %>%
+  st_as_sf(coords = c("lon", "lat")) %>%
+  filter(abbr != "AK", abbr != "HI")
+
+# setting reference system, not sure why its missing?
+st_crs(citypops$geometry) <- "NAD83"
+
+head(citypops)
+```
+
+:::
+
+::::
+
+## Plotting with ggplot!
+
+```{r}
+#| output-location: slide
+
+# plot outline
+usmap::plot_usmap(
+  regions = "states",
+  exclude = c("Alaska", "Hawaii"),
+  color = "grey"
+) +
+  # add points
+  geom_sf(data = citypops, aes(geometry = geometry, size = city_pop, color = city_pop)) +
+  
+  guides(color = guide_legend(), size = guide_legend()) +
+  
+  scale_size_continuous(
+    labels = c("2m", "4m", "6m", "8m"),
+    breaks = seq(2000000, 8000000, by = 2000000),
+    name = "Population"
+  ) +
+  
+  scale_color_continuous(
+    labels = c("2m", "4m", "6m", "8m"),
+    breaks = seq(2000000, 8000000, by = 2000000),
+    name = "Population"
+  ) +
+  
+  labs(title = "Most Populous City in Each State")
+
+```
+
+## Chloropleth
+
+#### Using `tidycensus`
+
+<!-- To use the tidycensus package, I had to go [here](https://api.census.gov/data/key_signup.html) to obtain a free API key for the Census Bureau data. -->
+
+<!-- ```{r} -->
+<!-- #| include: false -->
+<!-- # in order to use this notebook you'll need to follow the link above to get your own API key  -->
+<!-- key <- "41a035eafacc97e4193016630b4a08a2300cf6fb" -->
+
+<!-- if (exists("key") & length(key) > 0L) { -->
+<!--   print("API key loaded") -->
+<!-- } -->
+<!-- ``` -->
+
+#### API call
+
+```{r}
+#| results: hide
+
+MHI <- get_acs(
+  
+  geography = "state",      # at the state level
+  
+  variables = "B19013_001", # Median Household Income
+  
+  geometry = FALSE,          # return polygons
+  
+  year = 2020               # for census year 2020
+  
+)
+
+```
+
+##
+
+```{r}
+head(MHI)
+```
+
+## Using the SREB map
+
+```{r}
+#| include: false
+
+srebblue <- "#003087"
+lightblue <- "#b3c1db"
+
+
+srebblue_fill <- function(...) {
+  
+  scale_fill_gradient(...,
+    low = srebblue,
+    high = lightblue
+  )
+}
+```
+
+
+```{r}
+#| echo: false
+
+sreb_states <- st_read("data/sreb_states.shp")
+
+sreb_state_names <-
+  c(
+    "Alabama",
+    "Arkansas",
+    "Delaware",
+    "Florida",
+    "Georgia",
+    "Kentucky",
+    "Louisiana",
+    "Maryland",
+    "Mississippi",
+    "North Carolina",
+    "Oklahoma",
+    "South Carolina",
+    "Tennessee",
+    "Texas",
+    "Virginia",
+    "West Virginia"
+  )
+```
+
+
+```{r}
+#| output-location: slide
+
+data <- MHI %>%
+  right_join(sreb_states, by = c("NAME" = "name"))
+
+data %>%
+  ggplot() +
+  geom_sf(aes(geometry = geometry, fill = estimate)) +
+  srebblue_fill()
+```
+
+## Make it look a little nicer
+
+```{r}
+#| output-location: slide
+
+p <- data %>%
+  
+  ggplot() +
+  
+  geom_sf(
+    aes(geometry = geometry, fill = estimate),
+    linewidth = 0
+  ) +
+  
+  srebblue_fill(name = "Median Household Income",
+                       labels = ~ scales::comma(.)) +
+  
+  theme_void() +
+  
+  theme(
+    legend.position = c(0.2, 0.8),
+    legend.text = element_text(size = 12),
+    legend.title = element_text(size = 16)
+  )
+  
+p
+```
+
+## Interactivity with ggplotly()
+
+```{r}
+#| output-location: slide
+
+p <- data %>%
+  
+  ggplot() +
+  
+  geom_sf(
+    aes(
+      geometry = geometry,
+      fill = estimate,
+      text = paste0(NAME, "\n$", scales::comma(estimate))
+    ),
+    linewidth = 0
+  ) +
+  
+   srebblue_fill(name = "Median Household\nIncome",
+                       labels = ~ scales::comma(.)) +
+  
+  theme_void() +
+  
+  theme(
+    legend.position = c(0.15, 0.8),
+    legend.text = element_text(size = 12),
+    legend.title = element_text(size = 16)
+  )
+
+ggplotly(p, tooltip = "text", height = 450, width = 800) %>%
+  
+  style(hoveron = "fill") %>%
+  
+  layout(xaxis = list(showline = FALSE),
+         yaxis = list(showline = FALSE), modebar = 'zoom') 
+```
+
+# Dashboards
+
+## Markdown
+
+### Quarto/Rmd
+
+  -   Chunk outputs become "cards"
+  -   Organized by headings
+
+## Plotly and Crosstalk
+
+### [Example](https://www.erikigelstrom.com/articles/interactive-dashboards-in-r-without-shiny/dashboard#daily-time-series)
+
+## Shiny
+
+This is full-fledged app development framework that can be run on a server.
+
+### [Example](https://shiny.posit.co/r/gallery/interactive-visualizations/movie-explorer/)

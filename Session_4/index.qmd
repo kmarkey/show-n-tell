@@ -1,0 +1,92 @@
+---
+title: "Testing the Titlepage"
+subtitle: "Version"
+date: today
+date-format: long
+author:
+  - name: Southern Regional Education Board
+    email: author.email@sreb.org
+    affiliation: 
+      - name: Produced by the Southern Regional Education Board
+        city: Atlanta
+        state: GA
+        url: www.sreb.org
+execute:
+  warning: false
+crossref:
+  fig-prefix: "Figure"
+keep-tex: true
+abstract: "Abstract"
+keywords:
+  - KEYWORDS
+license: "License"
+copyright: 
+  holder: None
+  year: 2024
+citation: 
+  container-title: SREB
+  volume: 1
+  issue: 1
+  doi: "0000000"
+funding: "Funding Information"
+
+format: titlepage-pdf # copy this line!!!
+---
+
+# Activaing the extension
+
+First, copy the `_extensions` folder to the same folder as your main quarto file.
+
+In order to use the extension that will add the SREB titlepage to your pdf output, you need to set the format option in the yaml frontmatter of your main quarto (.qmd) file to titlepage-pdf, just like I've done for this quarto file.
+
+Once you've changed the output format, Quarto will search for the output format in the `_extensions` folder when you render the quarto file.
+
+When your file renders correctly, you should see some more files appear in your folder:
+
+  -   A folder: **your_quarto_file**_files
+  -   **your_quarto_file**.tex, an intermediary LaTeX file that's used to generate the pdf
+  -   SREB-logo-white.png, the logo that appears in the titlepage
+  -   and your pdf output!
+
+# Quarto
+
+Quarto is an open-source scientific and technical publishing system built on [Pandoc](https://pandoc.org). Quarto documents are authored using [markdown](https://en.wikipedia.org/wiki/Markdown), an easy to write plain text format.
+
+# Presentation from Isabella Velasquez
+
+https://ivelasq.quarto.pub/intro-to-quarto/#/section
+
+In addition to the core capabilities of Pandoc, Quarto includes:
+
+1.  Embedding code and output from Python, R, Julia, and JavaScript via integration with [Jupyter](https://jupyter.org/), [Knitr](https://yihui.org/knitr/), and [Observable](https://github.com/observablehq/).
+
+```{r}
+3 + 4
+```
+
+2.  A variety of extensions to Pandoc markdown useful for technical writing including cross-references, sub-figures, layout panels, hoverable citations and footnotes, callouts, and more.
+
+::: callout-warning
+## Callout
+Callouts provide a simple way to attract attention, for example, to this warning.
+:::
+
+```{r}
+#| label: fig-mtcars-plot
+library(ggplot2)
+ggplot(mtcars) + geom_bar(aes(x = cyl))
+```
+
+See @fig-mtcars-plot
+
+3.  A project system for rendering groups of documents at once, sharing options across documents, and producing aggregate output like [websites](https://quarto.org/docs/websites/) and [books](https://quarto.org/docs/books/).
+
+4.  Authoring using a wide variety of editors and notebooks including [JupyterLab](https://quarto.org/docs/tools/jupyter-lab.html), [RStudio](https://quarto.org/docs/tools/rstudio.html), and [VS Code](https://quarto.org/docs/tools/vscode.html).
+
+5.  A [visual markdown editor](https://quarto.org/docs/visual-editor/) that provides a productive writing interface for composing long-form documents.
+
+Learn more about Quarto at <https://quarto.org>.
+
+## License
+
+Quarto is open source software available under the MIT license (<https://opensource.org/license/mit/>).

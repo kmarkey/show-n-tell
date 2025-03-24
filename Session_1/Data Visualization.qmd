@@ -1,0 +1,507 @@
+---
+title: "Data Visualization"
+subtitle: "Show & Tell Session 1"
+format: 
+  revealjs:
+    theme: style/custom.scss
+editor: source
+echo: true
+---
+
+# Intro
+
+Data Visualization is a super important part of any project!
+
+-   Understand our data
+-   Understand what we are doing to the data
+-   Check our work
+
+# Today's agenda
+
+-   Answer questions with data viz
+-   Explore what R has to offer
+-   Look at some other R visualizations
+
+## First steps
+
+Let's see what this data looks like:
+
+```{r}
+#| echo: false
+
+# library in the data
+library(dplyr)
+library(ggplot2)
+library(palmerpenguins)
+library(ggthemes)
+
+# tell R to bring this data set into the Environment
+data(penguins)
+```
+
+
+```{r}
+head(penguins)
+```
+
+How big is it?
+
+```{r}
+dim(penguins)
+```
+
+## Let's get plotting!
+
+Some questions:
+
+-   How many penguins are in each species
+-   How does weight differ by island?
+-   How are bill length and bill depth related?
+
+**We'll use ggplot (ggplot2)**
+
+::: {.callout-tip}
+
+## There's a package for that!
+
+:::
+
+## How many penguins are in each species?
+
+```{r}
+#| label: question-1-before
+
+ggplot(data = penguins, mapping = aes(x = species)) +
+  geom_bar()
+```
+
+## How many penguins are in each species?
+
+:::: {.columns}
+
+::: {.column width="25%"}
+
+#### Goals
+
+-   Add a title
+-   Make it look a little nicer
+
+:::
+
+::: {.column width="75%"}
+
+#### Code
+
+```{r}
+#| eval: false
+#| label: question-1-after
+
+ggplot(data = penguins) + 
+  
+  geom_bar(aes(x = species)) +
+  
+  # add a title
+  labs(title = "Penguins by Species") +
+  
+  # make it look a little nicer
+  theme_classic()
+```
+
+:::
+
+::::
+
+## How many penguins are in each species? {auto-animate=true}
+
+```{r}
+#| echo: false
+#| label: question-1-before
+```
+
+## How many penguins are in each species? {auto-animate=true}
+
+```{r}
+#| echo: false
+#| label: question-1-after
+```
+
+## How does weight differ by island?
+
+```{r}
+#| label: question-2-before
+
+penguins %>%
+  
+  ggplot() +
+  
+  geom_boxplot(aes(x = island, y = body_mass_g))
+```
+
+## How does weight differ by island?
+
+:::: {.columns}
+
+::: {.column width="25%"}
+
+#### Goals
+
+-   Add some axis labels and a title
+-   Change to pounds
+-   Make sure 0 is included in y scale
+-   Add some color -- let's use some SREB colors!
+
+:::
+
+::: {.column width="75%"}
+
+#### Code
+
+```{r}
+#| eval: false
+#| label: question-2-after
+
+penguins %>%
+  
+  ggplot() +
+  
+  # change to pounds, add color
+  geom_boxplot(aes(x = island, y = body_mass_g * 0.00220462, fill = island)) +
+  
+  # change labels and title
+  labs(title = "A Buffet for Biscoe Penguins",
+       x = "Island",
+       y = "Body Mass (Lbs)") +
+  
+  # include 0 in scale
+  lims(y = c(0, 6500 * 0.00220462)) +
+  
+  theme_economist() +
+  
+  # specify color
+  scale_fill_manual(values = c("#003087", "#84BD00", "#00AEC7"), guide = "none")
+```
+
+:::
+
+::::
+
+## How does weight differ by island? {auto-animate=true}
+
+```{r}
+#| echo: false
+#| label: question-2-before
+```
+
+## How does weight differ by island? {auto-animate=true}
+
+```{r}
+#| echo: false
+#| label: question-2-after
+```
+
+## How are bill length and bill depth related?
+
+```{r}
+#| eval: false
+#| label: question-3-before
+
+penguins %>%
+  
+  ggplot() + 
+  
+  geom_point(aes(x = bill_length_mm, y = bill_depth_mm)) +
+
+  # change labels and title
+  labs(title = "Scatterplot of Bill Sizes",
+       x = "Bill Length (mm)",
+       y = "Bill Depth (mm)") +
+  
+  theme_classic()
+```
+
+## How are bill length and bill depth related?
+
+```{r}
+#| echo: false
+#| label: question-3-before
+```
+
+
+## How are bill length and bill depth related?
+
+:::: {.columns}
+
+::: {.column width="25%"}
+
+#### Goals
+
+-   Color by groups
+-   Where is Martin?
+
+:::
+
+::: {.column width="75%"}
+
+#### Code
+
+```{r}
+#| echo: false
+
+library(randomNames)
+library(stringr)
+
+set.seed(117)
+
+name_vector <- randomNames(nrow(penguins), which.names = "first")
+
+# name the penguins
+named_penguins <- penguins %>% 
+  mutate(
+    name = name_vector,
+    highlight = case_when(
+      name == "Martin" ~ name,
+      TRUE ~ ""
+      )
+    ) 
+```
+
+```{r}
+#| eval: false
+#| label: question-3-after
+
+library(ggrepel)
+
+named_penguins %>%
+  
+  ggplot() +
+  # add color and transparency with alpha
+  geom_point(aes(x = bill_length_mm, y = bill_depth_mm, color = species), 
+             size = 3, alpha = 0.70) +
+  # point out Martin!
+  geom_text_repel(
+    aes(x = bill_length_mm, y = bill_depth_mm, label = highlight),
+    size = 5,
+    nudge_x = .5,
+    nudge_y = 1.5
+  ) +
+  # change labels and title
+  labs(title = "Scatterplot of Bill Sizes",
+       x = "Bill Length (mm)",
+       y = "Bill Depth (mm)") +
+  theme_classic() +
+  # specify colors
+  scale_color_manual(values = c("#003087", "#84BD00", "#00AEC7"),
+                     name = "Species") +
+  # move legend
+  theme(legend.position = "top")
+```
+
+:::
+
+::::
+
+## How are bill length and bill depth related? {auto-animate=true}
+
+```{r}
+#| echo: false
+#| label: question-3-before
+```
+
+## How are bill length and bill depth related? {auto-animate=true}
+
+```{r}
+#| echo: false
+#| label: question-3-after
+```
+
+
+## Don't forget about data manipulation!
+
+-   Half of the battle is getting the data formatted correctly before you start messing around with plots. 
+
+-   It's important to have a good foundation in data manipulation!
+
+## Remove all of the NA's in the data
+
+```{r}
+penguins_clean <- penguins %>%
+  
+  na.omit()
+```
+
+
+:::{.callout-tip}
+
+## Use the `%>%` pipe!
+
+:::
+
+#### Without
+
+```{r}
+penguins_species_mean <-
+  summarise(group_by(.data = penguins_clean, species), mass = mean(body_mass_g))
+```
+
+|
+|
+
+#### With
+
+```{r}
+#|  output-location: slide
+
+penguins_species_mean <- penguins_clean %>%
+  
+  group_by(species) %>%
+  # put comment here
+  summarise(mass = mean(body_mass_g))
+
+penguins_species_mean
+```
+
+## Plot
+
+```{r}
+penguins_species_mean %>%
+  
+  ggplot() + geom_bar(aes(x = mass, y = species), stat = "identity")
+
+```
+
+# More examples!
+
+## Lollipop Plot
+
+```{r}
+#| echo: false
+#| fig-height: 8
+#| fig-width: 6
+
+# set random seed for reproducibility in slice_sample
+set.seed(117)
+
+named_penguins %>%
+  
+  slice_sample(n = 20) %>%
+  
+  dplyr::mutate(flength = scale(flipper_length_mm)) %>%
+  
+  ggplot(aes(
+    y = reorder(name, flength),
+    x = flength,
+    label = round(flength, 2)
+  )) +
+  
+  geom_point(stat = 'identity',
+             color = "#003087",
+             size = 10) +
+  
+  geom_segment(aes(
+    x = 0,
+    y = name,
+    xend = flength,
+    yend = name
+  ),
+  color = "#003087") +
+  
+  geom_text(color = "white", size = 3) +
+  
+  labs(
+    title = "Normalized Flipper Lengths for 20 Penguins",
+    x = "Normalized Flipper Length (mm)",
+    y = "Name"
+  ) +
+  
+  xlim(-2, 2) +
+  
+  theme_bw()
+```
+
+## Ridgeline Plot
+
+```{r}
+#| echo: false
+
+# library
+library(ggridges)
+library(ggplot2)
+library(viridis)
+library(hrbrthemes)
+
+# Plot
+ggplot(penguins, aes(x = bill_depth_mm, y = species, fill = ..x..)) + # using the ..x.. pronoun (just like in english!)
+  
+  # ridgeline function
+  geom_density_ridges_gradient(scale = 1, rel_min_height = 0.01) +
+  
+  scale_fill_viridis(name = "", option = "C") +
+  
+  labs(title = "Distribtuion of Bill Depth",
+       x = "Bill Depth (mm)",
+       y = "Species") +
+  
+  # applying a new theme
+  theme_ipsum() +
+  
+  # altering theme elements
+  theme(
+    legend.position = "none",
+    panel.spacing = unit(0.8, "lines"),
+    strip.text.x = element_text(size = 8)
+  )
+```
+
+## Sankey Plot
+
+```{r}
+#| echo: false
+
+library(networkD3)
+
+# formatting data by combining 2 data frames to get all links
+links <- bind_rows(penguins_clean %>%
+  dplyr::count(species, island) %>%
+    rename("source" = "species", "target" = "island", "value" = "n"),
+  penguins_clean %>% 
+    dplyr::count(island, sex) %>%
+    rename("source" = "island", "target" = "sex" , "value" = "n"))
+
+# add spaces for formatting
+links$source <- paste(links$source, " ", sep="")
+links$target <- paste(links$target, " ", sep="")
+
+# From these flows we need to create a node data frame: it lists every entities involved in the flow
+nodes <- data.frame(
+  name=c(as.character(links$source), 
+  as.character(links$target)) %>% unique()
+)
+ 
+# With networkD3, connection must be provided using id, not using real name like in the links dataframe.. So we need to reformat it.
+links$IDsource <- match(links$source, nodes$name)-1 
+links$IDtarget <- match(links$target, nodes$name)-1
+ 
+# Make the Network
+p <- sankeyNetwork(Links = links, Nodes = nodes,
+              Source = "IDsource", Target = "IDtarget",
+              Value = "value", NodeID = "name", 
+              sinksRight=FALSE, nodeWidth=40, fontSize=13, nodePadding=20)
+p
+```
+
+## More Abstract
+
+![](img/genesisThomasPedersen.png)
+
+# Final Thoughts
+
+-   There's tons of theory and other things to worry about during data visualization!
+-   Next time: More visualization in R--maps, interactivity, dashboards
+-   Thank you!
+
+## More Resources
+
+-   [More in-depth ggplot tutorial](https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/)
+-   Visual Communication, Stephen Few
+-   [Soar Beyond the Dusty Shelf Report](https://depictdatastudio.teachable.com/p/soar-beyond-the-dusty-shelf-report)
+-   Most of these figures were inspired by [The R Graph Gallery](https://r-graph-gallery.com/index.html)

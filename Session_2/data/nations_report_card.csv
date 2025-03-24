@@ -1,0 +1,919 @@
+year,sample,yearSampleLabel,Cohort,CohortLabel,stattype,subject,grade,scale,jurisdiction,jurisLabel,variable,variableLabel,varValue,varValueLabel,value,isStatDisplayable,errorFlag
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,52.7245218900273,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,207.75203301297,1,0
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,62.556885301412,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,217.071528896937,1,0
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,73.318193483501,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,225.83845909292,1,0
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,64.7616736540859,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,219.465222176412,1,0
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,58.2854525611265,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,214.430920543413,1,0
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,64.9130075890658,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,219.926817858434,1,0
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,53.028713368765,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,209.165658287644,1,0
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,64.5967539247065,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,220.02958576565,1,0
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,47.8352710895494,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,204.393607049303,1,0
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,61.504065165442,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,217.134448665244,1,0
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,64.203454970762,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,218.983462655828,1,0
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,60.3121993804775,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,213.861450098821,1,0
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,57.3742949760747,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,213.203507177181,1,0
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,59.1972203246409,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,214.221269348578,1,0
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,63.9382965623552,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,218.733823976846,1,0
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,71.87436034052,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,225.81371068134,1,0
+2005,R3,2005,1,Grade 4,ALC:AB,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,60.5259520777978,1,0
+2005,R3,2005,1,Grade 4,MN:MN,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,214.767066412741,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,61.5759441369667,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,216.38895388449,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,63.5152899878993,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,217.027817745061,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,72.6304627167544,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,225.070542301849,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,70.4333343694208,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,223.534926816656,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,65.5592020124218,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,218.888171260588,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,68.3517509415005,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,222.432314246177,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,51.9299778656893,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,207.406805529699,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,68.8853390291657,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,224.781265126508,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,51.4925366651617,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,207.809518812675,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,63.9292393906246,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,217.934042613497,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,67.1585355210955,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,220.988929569513,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,64.9833519989245,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,216.955654036521,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,58.9227672372733,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,213.836527211386,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,60.6281799604223,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,215.749268590355,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,65.7762115011889,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,219.604313050316,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,74.4150929549158,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,227.136724852212,1,0
+2007,R3,2007,1,Grade 4,ALC:AB,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,62.6424450111692,1,0
+2007,R3,2007,1,Grade 4,MN:MN,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,215.130555459311,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,62.0949621142323,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,216.273355869774,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,63.1057266909183,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,216.151581392988,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,72.7396783439796,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,225.513086784412,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,73.1363273772026,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,225.673407344794,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,62.805717200349,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,217.848105733688,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,72.0330680148527,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,225.606242400736,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,51.2989915719288,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,207.486137163094,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,70.2832854752198,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,226.047783920533,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,54.5332486047844,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,210.506517536678,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,65.212679576867,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,219.296045907462,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,66.9643039138425,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,220.94494004277,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,65.294753020164407,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,217.190627559253,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,61.8709589742172,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,215.942298236521,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,62.7953459831048,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,216.737811108148,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,64.5998169326886,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,218.858272374458,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,73.7151427975983,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,226.527567976704,1,0
+2009,R3,2009,1,Grade 4,ALC:AB,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,61.7688900617322,1,0
+2009,R3,2009,1,Grade 4,MN:MN,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,214.520200208315,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,67.2381201770005,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,220.273413326721,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,62.7665473439704,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,216.51486397475,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,72.3113708731943,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,225.130511094607,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,71.1828694574847,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,224.528585389604,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,66.2117688553992,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,220.810720110917,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,71.7417743716603,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,225.13506287333,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,55.4559765732942,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,210.410726308503,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,74.9961366677721,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,230.782841211696,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,54.6214104588317,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,209.188020129765,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,68.1129072877366,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,221.356963571717,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,67.4697147674819,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,221.214563315162,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,63.7584402818869,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,215.477585729834,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,61.2703480681168,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,214.899808914466,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,60.4963233728099,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,214.640214936919,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,63.9027150387821,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,218.320844616792,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,72.163671145227,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,226.37843469424,1,0
+2011,R3,2011,1,Grade 4,ALC:AB,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,60.8092037144407,1,0
+2011,R3,2011,1,Grade 4,MN:MN,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,214.386024190084,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,65.4054611468879,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,218.57595339188,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,65.983413823916,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,218.523885266815,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,72.7388704081703,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,225.77165116252,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,74.9905926440847,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,227.46317661052,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,66.9792053114265,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,221.836712514568,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,71.1242623184871,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,224.427540486587,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,56.3943971330603,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,210.454963224321,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,76.5720182038351,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,232.055973147422,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,53.2459064919435,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,208.518536453726,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,69.0651028068307,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,222.227715159886,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,68.352313512223,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,221.832168044373,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,65.1189313771702,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,216.988876495215,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,60.4759450351313,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,213.64654387011,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,67.0294930097902,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,219.735394665222,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,62.6876130644745,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,216.909597076471,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,74.1364631057405,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,228.555737669337,1,0
+2013,R3,2013,1,Grade 4,ALC:AB,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,61.8360600816638,1,0
+2013,R3,2013,1,Grade 4,MN:MN,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,214.663401291545,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,64.5018338426419,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,217.049089788052,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,65.0539187192996,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,218.077496215637,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,70.0803715493191,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,223.698696847081,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,74.5406226582085,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,227.188968975009,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,68.0684753754634,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,222.013497271819,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,74.5163729021204,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,228.055168332762,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,63.1196335728918,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,216.199337216284,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,67.5883911256542,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,222.944189619399,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,60.4355534792348,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,214.110686915211,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,72.5607318663759,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,225.810590900179,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,68.8443085255898,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,222.51778238114,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,70.7040274339162,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,221.830510126344,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,64.5172402196527,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,217.969676534277,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,65.6653467695258,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,218.613264393701,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,64.0329717402545,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,217.942913018264,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,73.8564110789824,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,228.971255010227,1,0
+2015,R3,2015,1,Grade 4,ALC:AB,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,64.026926289581,1,0
+2015,R3,2015,1,Grade 4,MN:MN,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,216.253287883864,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,63.150831118221,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,216.419813531011,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,62.8624626199697,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,216.108025728181,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,67.1145702223602,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,221.482217417377,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,74.5376098355786,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,228.272622052382,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,65.9264337356384,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,219.682925180546,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,69.6128106860177,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,224.080585290071,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,55.904299359541,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,211.600527874868,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,68.9225587655154,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,225.04933454894,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,60.3604641777238,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,215.203305690064,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,69.2014470151464,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,223.930906236334,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,67.7140834588947,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,221.892902768779,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,63.3980506478202,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,216.587775171729,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,58.9078968286236,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,213.127835391026,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,64.4715789598008,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,218.952797117684,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,60.495265803241,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,214.87849345961,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,74.0097833714083,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,227.598382221255,1,0
+2017,R3,2017,1,Grade 4,ALC:AB,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,63.8629167030592,1,0
+2017,R3,2017,1,Grade 4,MN:MN,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,217.316396173819,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,57.7277784806719,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,211.728520409549,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,62.1154999433857,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,215.054222154958,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,62.4200899355612,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,217.686784683225,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,70.2795058933729,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,224.71226131,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,63.3354458360456,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,217.982568037342,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,66.7909175017398,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,220.929888641558,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,54.6838374928802,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,209.873121958397,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,64.2159553230084,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,219.838944928094,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,65.3960536301807,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,219.342215016725,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,66.8446389454817,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,221.280043715178,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,66.3327622724532,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,220.474059149004,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,63.3184760584206,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,216.35068432151,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,61.1192311072696,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,215.981732374201,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,65.6498822967728,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,219.061110000096,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,61.2460998104771,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,216.044998438523,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,68.9734221277397,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,223.641834613407,1,0
+2019,R3,2019,1,Grade 4,ALC:AB,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,60.1419932301541,1,0
+2019,R3,2019,1,Grade 4,MN:MN,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,213.184518276667,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,58.6626269225444,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,AL,Alabama,TOTAL,All students,1,All students,213.304803954478,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,58.148079659849,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,211.952401971433,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,53.1710744458859,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,DE,Delaware,TOTAL,All students,1,All students,208.301570070164,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,70.5630671606966,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,FL,Florida,TOTAL,All students,1,All students,224.739478076644,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,60.7990955154285,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,GA,Georgia,TOTAL,All students,1,All students,215.882292250826,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,62.0471505897158,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,216.597654865333,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,57.4077988141721,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,212.335700553312,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,56.4587510857783,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,MD,Maryland,TOTAL,All students,1,All students,212.480141744086,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,63.4048049580095,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,217.160500079958,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,61.2394487855438,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,216.130141000817,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,62.6120680982858,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,NT,National,TOTAL,All students,1,All students,217.494490502989,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,55.0952082026605,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,208.10830835914,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,60.8747656695817,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,216.388794375541,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,58.9846027562651,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,214.000841671919,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,58.414238023962,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,TX,Texas,TOTAL,All students,1,All students,214.198243688727,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,59.922691585177,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,VA,Virginia,TOTAL,All students,1,All students,214.035607766354,1,0
+2022,R3,2022,1,Grade 4,ALC:AB,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,52.3239655686261,1,0
+2022,R3,2022,1,Grade 4,MN:MN,RED,4,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,205.310453431884,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,62.6212004553317,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,251.978391189903,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,69.0200480504376,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,257.691731885046,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,80.0553759071314,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,266.00936537348,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,66.0293174349619,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,255.779970004926,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,66.8189350792687,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,256.872381537265,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,75.3935091847772,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,263.938418419941,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,63.8901222631821,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,252.691593269226,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,69.2575999071307,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,260.78238344543,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,60.3833810997738,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,250.530668896407,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,68.9261668898874,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,258.160185489234,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,72.5839130319988,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,262.169658855575,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,72.2884488240222,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,259.631359955752,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,67.03858180028,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,257.16910456442,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,70.6484900655504,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,259.072341834008,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,69.1283414004293,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,258.191597999486,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,78.4482479239539,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,267.808966738154,1,0
+2005,R3,2005,2,Grade 8,ALC:AB,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,66.6475323671558,1,0
+2005,R3,2005,2,Grade 8,MN:MN,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,255.0733795631,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,62.2935513845062,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,251.936881437536,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,69.6249912213242,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,257.96099580386,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,77.2256130651749,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,264.544830664544,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,71.4680210683354,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,259.790720651776,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,70.0942105374951,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,258.70499279234,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,73.2957936699141,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,261.965950993654,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,64.1686711104794,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,253.238294281289,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,75.584211758823,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,265.240121492132,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,60.2847376432689,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,250.063570104392,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,70.971264088646,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,259.136703088411,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,74.0384808550901,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,262.791677985083,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,72.0754716797693,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,259.547225161046,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,68.7272915519574,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,257.421202792973,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,71.295364377288,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,259.161954905287,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,72.9852360746634,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,260.812919224922,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,78.741000509098,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,266.878737486076,1,0
+2007,R3,2007,2,Grade 8,ALC:AB,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,68.3870984840385,1,0
+2007,R3,2007,2,Grade 8,MN:MN,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,254.998552385478,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,65.7211602337235,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,254.89524659554,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,69.2456963047907,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,258.048580163614,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,77.7098132818873,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,264.998966063101,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,75.6241262529868,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,264.362040854787,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,72.1811535589751,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,260.244524519648,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,78.9928734387352,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,266.854019810768,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,64.4464186007779,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,253.329004007468,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,77.2914169461734,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,267.298056489004,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,61.6189978467051,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,251.305654614612,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,70.11818759946,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,259.528486560755,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,75.2950092120623,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,264.009995529273,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,72.5614813363119,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,259.495771007061,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,68.2379469042321,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,257.274184592561,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,72.7111590246248,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,260.946676191649,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,72.8718399325877,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,260.368795018986,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,77.9320613156582,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,265.641981716133,1,0
+2009,R3,2009,2,Grade 8,ALC:AB,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,67.223582271929,1,0
+2009,R3,2009,2,Grade 8,MN:MN,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,254.799747493408,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,69.0346173199736,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,258.421090379483,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,70.5663283319005,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,259.140937770185,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,77.1193952118743,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,265.83947553632,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,73.1346249070528,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,262.121374840411,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,74.3124227769469,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,262.358643383963,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,79.4563843583207,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,268.833963566714,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,65.5672669241232,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,254.688347843905,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,79.9644125799996,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,271.222896649808,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,64.9924575863936,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,253.833440432713,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,73.8465737823338,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,262.928956255321,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,75.9944336256578,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,265.198760593294,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,72.5254493869156,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,260.121264611744,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,71.9301571730045,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,260.307019898795,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,70.1015299523151,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,259.208370713199,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,74.4633498709789,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,261.428390874698,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,77.9709955852721,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,267.272891187823,1,0
+2011,R3,2011,2,Grade 8,ALC:AB,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,67.9708415596792,1,0
+2011,R3,2011,2,Grade 8,MN:MN,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,256.106861556751,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,68.4250284284649,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,257.427838227608,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,72.8230012105005,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,261.964490796451,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,76.526515771203,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,265.984981498562,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,76.7459206354649,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,265.828297127322,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,75.3020016273073,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,264.615713463699,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,79.6420307302118,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,269.616471686598,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,67.5669899332651,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,257.351242737394,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,82.2931716195704,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,273.801903090503,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,64.2516539134627,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,253.147818177655,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,75.6602161944742,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,264.540999710832,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,77.8255973711903,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,267.598313994883,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,74.6374064964815,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,261.931495221637,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,72.6357814040498,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,261.449050699613,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,76.7565425985002,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,265.359504625647,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,75.6652875878461,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,263.684137731278,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,77.7276410845478,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,267.589864309109,1,0
+2013,R3,2013,2,Grade 8,ALC:AB,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,69.915667577229,1,0
+2013,R3,2013,2,Grade 8,MN:MN,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,257.383509312362,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,71.4656924315683,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,258.753761500039,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,70.0773878525586,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,258.768267976658,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,73.3874985220835,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,262.613290731544,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,75.0402640996685,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,263.383001406664,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,73.4515980428982,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,262.268605314622,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,77.9057066623631,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,267.772900145423,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,66.0243729936136,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,255.469417777569,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,76.2206831924494,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,267.905529723763,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,62.8310519633535,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,251.976165209278,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,71.7255538807656,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,260.594556550199,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,76.0207319513426,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,265.44331446909,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,75.9516283057675,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,262.673145850428,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,71.3607398833337,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,260.331422813083,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,75.6541114398391,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,264.771228998921,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,72.4687175414837,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,260.655135980903,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,77.2952653684956,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,266.836053468874,1,0
+2015,R3,2015,2,Grade 8,ALC:AB,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,72.2781766392127,1,0
+2015,R3,2015,2,Grade 8,MN:MN,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,260.185272642999,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,67.4502054025515,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,257.686520320925,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,71.2335871802402,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,259.95579848311,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,72.1087116565957,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,263.089089818878,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,77.2329670752147,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,266.553368977303,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,75.8164858729494,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,266.33044082589,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,74.8025633352951,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,265.133438043566,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,67.1972727468029,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,256.751471206395,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,74.3341172598227,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,267.250532713498,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,66.4258491416203,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,256.344701137275,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,73.6007311711001,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,262.720476897929,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,76.3508267693942,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,266.577954235286,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,73.8940795321393,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,261.236933515587,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,70.6024411429028,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,259.753002398086,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,72.939523583508,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,262.046852903713,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,71.4696108982432,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,260.342576542804,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,77.2715951757537,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,267.744778499104,1,0
+2017,R3,2017,2,Grade 8,ALC:AB,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,70.2465227811449,1,0
+2017,R3,2017,2,Grade 8,MN:MN,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,258.700303604492,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,63.8975923383622,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,253.398604872946,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,68.1369929493187,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,258.78275377192,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,69.031832604972,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,259.679402371344,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,72.1272010378953,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,263.352557734343,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,71.6481500559491,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,262.386099206627,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,72.5806074218112,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,262.9635373774,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,67.5064441959097,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,257.421808574891,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,72.8321111579613,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,264.389022442559,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,67.1865144425049,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,256.380475226081,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,72.0135852992475,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,262.530279226334,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,72.6107342412657,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,263.149657191501,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,71.4306722926657,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,258.197131397005,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,68.7750725162311,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,258.976515885229,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,72.6507788897518,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,262.462713482116,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,67.0479760464836,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,255.742396588221,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,71.1129493663354,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,261.798121159611,1,0
+2019,R3,2019,2,Grade 8,ALC:AB,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,67.3219270874661,1,0
+2019,R3,2019,2,Grade 8,MN:MN,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,255.624126301159,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,60.8695772676097,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,AL,Alabama,TOTAL,All students,1,All students,250.895926965125,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,64.1720782512517,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,255.04244394381,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,62.1572376281959,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,DE,Delaware,TOTAL,All students,1,All students,253.007183169647,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,68.6381906743524,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,FL,Florida,TOTAL,All students,1,All students,259.631409925572,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,68.7656372423484,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,GA,Georgia,TOTAL,All students,1,All students,259.986245607579,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,68.1581598865113,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,258.49198679453,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,66.314323299084,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,256.645731498475,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,66.9122661179984,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,MD,Maryland,TOTAL,All students,1,All students,259.293557884938,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,62.9411879558709,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,252.928904243024,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,65.6715445837365,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,256.156371582761,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,69.7419794948111,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,NT,National,TOTAL,All students,1,All students,260.46922366966,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,62.3245821848489,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,251.295531201592,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,62.7207936172469,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,253.86936782685,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,67.1906871721271,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,257.559768339582,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,65.8126539335819,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,TX,Texas,TOTAL,All students,1,All students,255.173642493018,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,68.5418424579078,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,VA,Virginia,TOTAL,All students,1,All students,259.551310888157,1,0
+2022,R3,2022,2,Grade 8,ALC:AB,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,60.0021576175548,1,0
+2022,R3,2022,2,Grade 8,MN:MN,RED,8,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,249.404708818444,1,0
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,72.530382641918,1,0
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,286.027011038289,1,0
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,ALC:AB,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,999,0,320
+2005,R3,2005,3,Grade 12,MN:MN,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,ALC:AB,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,999,0,320
+2007,R3,2007,3,Grade 12,MN:MN,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,68.1750432928614,1,0
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,279.884659843352,1,0
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,70.0112150515249,1,0
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,282.633483306621,1,0
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,74.1928837441209,1,0
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,288.272066949041,1,0
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2009,R3,2009,3,Grade 12,ALC:AB,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,67.9270558720747,1,0
+2009,R3,2009,3,Grade 12,MN:MN,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,279.398113231948,1,0
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,ALC:AB,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,999,0,320
+2011,R3,2011,3,Grade 12,MN:MN,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,72.0638507692687,1,0
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,284.556214688128,1,0
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,72.4768290774163,1,0
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,285.755262425793,1,0
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,74.5763687766343,1,0
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,288.431204963624,1,0
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,69.9475252547982,1,0
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,282.410555924299,1,0
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2013,R3,2013,3,Grade 12,ALC:AB,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,69.9074817691447,1,0
+2013,R3,2013,3,Grade 12,MN:MN,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,280.214973053464,1,0
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,71.9822930029823,1,0
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,287.030793987685,1,0
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,ALC:AB,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,999,0,320
+2015,R3,2015,3,Grade 12,MN:MN,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,ALC:AB,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,999,0,320
+2017,R3,2017,3,Grade 12,MN:MN,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,70.088482087312,1,0
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,285.481587901781,1,0
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,ALC:AB,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,999,0,320
+2019,R3,2019,3,Grade 12,MN:MN,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,AL,Alabama,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,AR,Arkansas,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,DE,Delaware,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,FL,Florida,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,GA,Georgia,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,KY,Kentucky,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,LA,Louisiana,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,MD,Maryland,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,MS,Mississippi,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,NC,North Carolina,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,NT,National,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,OK,Oklahoma,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,SC,South Carolina,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,TN,Tennessee,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,TX,Texas,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,VA,Virginia,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,ALC:AB,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,999,0,320
+2022,R3,2022,3,Grade 12,MN:MN,RED,12,RRPCM,WV,West Virginia,TOTAL,All students,1,All students,999,0,320

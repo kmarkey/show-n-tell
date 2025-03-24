@@ -1,0 +1,83 @@
+title: titlepage
+author: Keaton Markey
+quarto-required: ">=1.1.0"
+version: 1.0.0
+contributes:
+  format:
+  
+  # build pdf output
+    pdf:
+      filters:
+        - titlepage-theme.lua
+        - coverpage-theme.lua
+      template-partials:
+        - "_coverpage.tex"
+        - "_author-affiliation-themes.tex"
+        - "_header-footer-date-themes.tex"
+        - "_title-themes.tex"
+        - "_titlepage.tex"
+        - "before-body.tex"
+        - "pandoc.tex"
+      
+      include-in-header:
+        text: |
+          \definecolor{srebblue}{HTML}{003087}
+          \usepackage{float}
+          \floatplacement{table}{H}
+          \floatplacement{figure}{H}
+      
+# set some template defaults
+      papersize: letter
+      geometry: margin=1in
+      mainfont: Arial
+      titlepage-logo: "SREB-logo-white.png"
+      titlepage-geometry: ["top=0in", "bottom=0in", "right=0in", "left=0pt"]
+      vrule-color: srebblue
+      
+      # will copy logo to main directory
+      format-resources:
+        - "images/SREB-logo-white.png"
+        
+# options
+# include-in-header:
+#       text: |
+#         \definecolor{srebblue}{HTML}{003087}
+#         \definecolor{domblue}{HTML}{307FE2}
+#         \definecolor{domgreen}{HTML}{84BD00}
+#         \definecolor{domlightblue}{HTML}{00AEC7}
+#         \definecolor{accentorange}{HTML}{FFA300}
+#         \usepackage{float}
+#         \floatplacement{table}{H}
+#         \floatplacement{figure}{H}
+
+# format: titlepage-pdf
+    # titlepage: vline
+    # titlepage-logo: "images/SREB-logo-white.png"
+    # titlepage-footer: "footer"
+    # titlepage-geometry: ["top=0in", "bottom=0in", "right=0in", "left=0pt"]
+    # titlepage-theme:
+      # elements: ["\\titleblock", "\\dateblock", "\\authorblock", "\\vfill", "\\footerblock"]
+      # top-space: "2.75in"
+      # page-align: "left"
+      # title-style: "plain"
+      # title-fontsize: 28
+      # title-fontstyle: "bfseries"
+      # subtitle-fontstyle: "textit"
+      # subtitle-fontsize: 20
+      # date-fontsize: 14
+      # author-style: "plain"
+      # # author-fontstyle: "LARGE"
+      # author-fontsize: 14
+      # affiliation-style: "numbered-list"
+      # affiliation-fontstyle: "large"
+      # footer-style: "none"
+      # footer-fontsize: 10
+      # logo-size: "1.83in"
+      # vrule-width: "2.833in"
+      # vrule-space: "0.375in"
+      # vrule-align: "left"
+      # vrule-color: srebblue
+      # vrule-text-color: "white"
+      # # vrule-text-fontstyle: ["bfseries", "Large"]
+      # vrule-text: "SREB" # needs a character
+      # vrule-hspace: "0.50in"
