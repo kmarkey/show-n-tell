@@ -1,0 +1,192 @@
+---
+title: "Converting a .PNG to a shapefile with R"
+categories: ["tutorial", "R", "gis"]
+tags: ["tutorial", "png", "convert", "R", "terra", "dplyr", "shapefile", "raster", "demo"]
+
+author: Keaton Markey
+date: 2024-07-16
+prefer-html: true
+menubar_toc: true
+toc_title: Contents
+hero_height: is-fullwidth
+editor_options:
+  markdown:
+    wrap: 60
+
+execute:
+  warning: false
+  echo: true
+
+format:
+  gfm:
+    number_sections: false
+    preserve_yaml: true
+---
+
+## The Problem
+
+My organization recently developed a stylized map of its
+member states. Instead of fooling around with latitude and
+longitude, we adopted an eye-catching, geometric design,
+which I quite like.
+
+![The .PNG map](data/2023filledmap_blue.png)
+
+The only issue is that its an image, so I can't make maps
+with it. I would love to be able to change the color of each
+state based on its population, median income, or some other
+statistic.
+
+As I researched the problem, some suggested that I just use
+ArcGIS and trace over the image to create my own polygons.
+There were two problems with that:
+
+1.  I was sure that the resulting polygons wouldn't be an
+    exact trace over the image, distorting the work of
+    whoever made this map
+
+2.  I don't have ArcGIS
+
+Surely there must be a way to do this in R?
+
+## Solution
+
+```{r}
+# to read in the image
+library(png)
+
+# to do some transformations
+library(terra)
+library(sf)
+
+# tidyverse parts
+library(dplyr)
+library(ggplot2)
+```
+
+First, we need to read the image into R.
+
+```{r}
+img <- png::readPNG("data/2023filledmap_blue.png")
+
+```
+
+This image is represented as a Large array. PNG files and a
+few other image formats are stored as a matrix of values,
+where each value represents a pixel color.
+
+This is the format we want, but we need to translate it to a
+format that {terra} will understand. For that we can use the
+`rast()` function.
+
+```{r}
+img_raster <- terra::rast(img)
+
+plot(img_raster)
+```
+
+R has encoded this object as a SpatRaster, a {terra}-native
+object that has essentially the same structure as our
+original array: 3 dimensions representing rows, columns, and
+layers.
+
+The `rast()` function has identified 4 layers, each with
+different pixel values. We'll only need one for our
+operations.
+
+### Polygons
+
+In order to be able to *fill in* each state, we need to
+convert this grid of pixels to closed polygons. A shapefile
+must map a state name to polygons, points, or lines. `as.polygons` will trace an outline around the clusters of similar pixel values in the raster.
+
+```{r}
+plygns <- terra::as.polygons(img_raster)
+plot(plygns)
+```
+
+Gorgeous.
+
+If we take a quick look at this object, we can see that
+*there are actually 2 polygons layers*, one of which
+contains a map with an extra border, so lets remove that one really quick
+
+```{r}
+dim(plygns)
+
+plygns2 <- plygns[2, 1]
+```
+
+### Another Problem
+
+You may notice that our polygons look a little bit pixelated. Well, they are. This is because when we converted the raster file, we traced the outline of each group of pixels. Pixels, however unfortunately, are square, so our resulting polygons retain these right angles. We can get a closer look if we zoom in.
+
+```{r}
+mask <- ext(430, 470, 250, 300)
+sharp_corners <- terra::crop(plygns2, mask)
+plot(sharp_corners)
+```
+
+Traditionally, to smooth out sharp edges we could use an algorithm like:
+  - [Chaikin's Corner-cutting algorithm](https://www.cs.unc.edu/~dm/UNC/COMP258/LECTURES/Chaikins-Algorithm.pdf)
+  - Kernel smoothing
+  that can be implemented with the [{smoothr} package](https://cran.r-project.org/web/packages/smoothr/vignettes/smoothr.html)
+  
+  
+  <!-- convex hull algorithm -->
+However, these strictly vertex-based approaches won't work because we don't want all the corners to be smooth. We need to somehow preserve the sharp angles present in the original image, but remove the sharp 90-degree ridges that approximate what should be a straight line between two vertices.
+
+<!-- def chaikins_corner_cutting(coords, refinements=5): -->
+<!--     coords = np.array(coords) -->
+
+<!--     for _ in range(refinements): -->
+<!--         L = coords.repeat(2, axis=0) -->
+<!--         R = np.empty_like(L) -->
+<!--         R[0] = L[0] -->
+<!--         R[2::2] = L[1:-1:2] -->
+<!--         R[1:-1:2] = L[2::2] -->
+<!--         R[-1] = L[-1] -->
+<!--         coords = L * 0.75 + R * 0.25 -->
+
+<!--     return coords -->
+
+So, we'll take the other one, and dis-aggregate the
+remaining polygons into states. Let's see if we can color in
+the states now.
+
+```{r}
+multi <- terra::disagg(plygns[1])
+
+plot(multi, col = c("#cc73e4", "#f67809", "#668746", "#daeab4", "#c017fa", "#7d371a", "#9826e5", "#9ee7d1", "#561801", "#79c9d0", "#b8e528", "#9a82ca", "#87381d", "#65e2d4", "#87240f", "#ff4f75"))
+
+```
+
+For the final step, we'll move this object over to the {sf}
+package for compatibility with ggplot, and then carefully
+add in the state names. Since the polygons are sorted by
+total area, we can add in the state names in that same
+order.
+
+```{r}
+sf_states <- sf::st_as_sf(multi)
+
+state_keys <- tibble(abb = state.abb, name = state.name)
+
+sf_states <- bind_cols(sf_states, name = c("Delaware", "Maryland", "West Virginia", "Virginia", "Kentucky", "North Carolina", "Tennessee", "Oklahoma", "South Carolina", "Arkansas", "Georgia", "Alabama", "Mississippi", "Louisiana", "Florida", "Texas")
+) %>% left_join(state_keys) %>%
+  select(-lyr.1)
+
+
+
+ggplot(sf_states) + geom_sf(fill = "red") + theme_minimal()
+```
+
+If we were planning on including this shapefile with others
+on the same plot, we would want to scale and relocate
+relative to some projection, otherwise it probably take over
+the map. Alas, we don't need to do that since it will only
+ever by used in isolation, by me.
+
+```{r}
+sf::st_write(sf_states, "data/sf_states", driver = "GeoJSON", delete_dsn = TRUE)
+```
