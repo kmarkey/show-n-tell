@@ -1,11 +1,32 @@
 ---
-title: "Data Visualization"
-subtitle: "Show & Tell Session 1"
-format: 
-  revealjs:
-    theme: style/custom.scss
-editor: source
-echo: true
+title: Show & Tell Session 1
+subtitle: Data Visualization in R
+categories: ["tutorial", "R", "dataviz", "ggplot"]
+tags: ["tutorial", "introduction", "walk-through", "R", "tidyverse", "dplyr", "ggplot", "rstudio", "demo"]
+
+author: Keaton Markey
+date: 2024-3-1
+prefer-html: true
+menubar_toc: true
+toc_title: Contents
+hero_height: is-fullwidth
+editor_options: 
+  markdown: 
+    wrap: 60
+
+execute:
+  warning: false
+    
+format:
+  gfm:
+    number_sections: false
+    preserve_yaml: true
+
+# format:
+#   revealjs:
+#     theme: style/custom.scss
+# editor: source
+# echo: true
 ---
 
 # Intro
@@ -28,6 +49,8 @@ Let's see what this data looks like:
 
 ```{r}
 #| echo: false
+#| warning: false
+#| message: false
 
 # library in the data
 library(dplyr)
@@ -38,7 +61,6 @@ library(ggthemes)
 # tell R to bring this data set into the Environment
 data(penguins)
 ```
-
 
 ```{r}
 head(penguins)
@@ -60,11 +82,9 @@ Some questions:
 
 **We'll use ggplot (ggplot2)**
 
-::: {.callout-tip}
-
-## There's a package for that!
-
-:::
+<!-- ::: {.callout-tip} -->
+<!-- ## There's a package for that! -->
+<!-- ::: -->
 
 ## How many penguins are in each species?
 
@@ -77,23 +97,20 @@ ggplot(data = penguins, mapping = aes(x = species)) +
 
 ## How many penguins are in each species?
 
-:::: {.columns}
+<!-- :::: {.columns} -->
 
-::: {.column width="25%"}
+<!-- ::: {.column width="25%"} -->
 
 #### Goals
 
 -   Add a title
 -   Make it look a little nicer
 
-:::
+<!-- ::: -->
 
-::: {.column width="75%"}
-
-#### Code
+<!-- ::: {.column width="75%"} -->
 
 ```{r}
-#| eval: false
 #| label: question-1-after
 
 ggplot(data = penguins) + 
@@ -107,23 +124,9 @@ ggplot(data = penguins) +
   theme_classic()
 ```
 
-:::
+<!-- ::: -->
 
-::::
-
-## How many penguins are in each species? {auto-animate=true}
-
-```{r}
-#| echo: false
-#| label: question-1-before
-```
-
-## How many penguins are in each species? {auto-animate=true}
-
-```{r}
-#| echo: false
-#| label: question-1-after
-```
+<!-- :::: -->
 
 ## How does weight differ by island?
 
@@ -139,25 +142,22 @@ penguins %>%
 
 ## How does weight differ by island?
 
-:::: {.columns}
+<!-- :::: {.columns} -->
 
-::: {.column width="25%"}
+<!-- ::: {.column width="25%"} -->
 
 #### Goals
 
 -   Add some axis labels and a title
 -   Change to pounds
 -   Make sure 0 is included in y scale
--   Add some color -- let's use some SREB colors!
+-   Add some color -- let's use some branded colors!
 
-:::
+<!-- ::: -->
 
-::: {.column width="75%"}
-
-#### Code
+<!-- ::: {.column width="75%"} -->
 
 ```{r}
-#| eval: false
 #| label: question-2-after
 
 penguins %>%
@@ -181,29 +181,11 @@ penguins %>%
   scale_fill_manual(values = c("#003087", "#84BD00", "#00AEC7"), guide = "none")
 ```
 
-:::
-
-::::
-
-## How does weight differ by island? {auto-animate=true}
-
-```{r}
-#| echo: false
-#| label: question-2-before
-```
-
-## How does weight differ by island? {auto-animate=true}
-
-```{r}
-#| echo: false
-#| label: question-2-after
-```
-
 ## How are bill length and bill depth related?
 
 ```{r}
-#| eval: false
 #| label: question-3-before
+#| warning: false
 
 penguins %>%
   
@@ -221,31 +203,21 @@ penguins %>%
 
 ## How are bill length and bill depth related?
 
-```{r}
-#| echo: false
-#| label: question-3-before
-```
+<!-- :::: {.columns} -->
 
-
-## How are bill length and bill depth related?
-
-:::: {.columns}
-
-::: {.column width="25%"}
+<!-- ::: {.column width="25%"} -->
 
 #### Goals
 
 -   Color by groups
 -   Where is Martin?
 
-:::
+<!-- ::: -->
 
-::: {.column width="75%"}
-
-#### Code
+<!-- ::: {.column width="75%"} -->
 
 ```{r}
-#| echo: false
+#| include: false
 
 library(randomNames)
 library(stringr)
@@ -266,8 +238,8 @@ named_penguins <- penguins %>%
 ```
 
 ```{r}
-#| eval: false
 #| label: question-3-after
+#| warning: false
 
 library(ggrepel)
 
@@ -296,30 +268,13 @@ named_penguins %>%
   theme(legend.position = "top")
 ```
 
-:::
-
-::::
-
-## How are bill length and bill depth related? {auto-animate=true}
-
-```{r}
-#| echo: false
-#| label: question-3-before
-```
-
-## How are bill length and bill depth related? {auto-animate=true}
-
-```{r}
-#| echo: false
-#| label: question-3-after
-```
-
-
 ## Don't forget about data manipulation!
 
--   Half of the battle is getting the data formatted correctly before you start messing around with plots. 
+-   Half of the battle is getting the data formatted
+    correctly before you start messing around with plots.
 
--   It's important to have a good foundation in data manipulation!
+-   It's important to have a good foundation in data
+    manipulation!
 
 ## Remove all of the NA's in the data
 
@@ -329,12 +284,9 @@ penguins_clean <- penguins %>%
   na.omit()
 ```
 
+<!-- [!TIP] -->
+<!-- ## Use the `%>%` pipe! -->
 
-:::{.callout-tip}
-
-## Use the `%>%` pipe!
-
-:::
 
 #### Without
 
@@ -343,13 +295,12 @@ penguins_species_mean <-
   summarise(group_by(.data = penguins_clean, species), mass = mean(body_mass_g))
 ```
 
-|
-|
+| 
+| 
 
 #### With
 
 ```{r}
-#|  output-location: slide
 
 penguins_species_mean <- penguins_clean %>%
   
@@ -495,13 +446,18 @@ p
 
 # Final Thoughts
 
--   There's tons of theory and other things to worry about during data visualization!
--   Next time: More visualization in R--maps, interactivity, dashboards
+-   There's tons of theory and other things to worry about
+    during data visualization!
+-   Next time: More visualization in R--maps, interactivity,
+    dashboards
 -   Thank you!
 
 ## More Resources
 
--   [More in-depth ggplot tutorial](https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/)
+-   [More in-depth ggplot
+    tutorial](https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/)
 -   Visual Communication, Stephen Few
--   [Soar Beyond the Dusty Shelf Report](https://depictdatastudio.teachable.com/p/soar-beyond-the-dusty-shelf-report)
--   Most of these figures were inspired by [The R Graph Gallery](https://r-graph-gallery.com/index.html)
+-   [Soar Beyond the Dusty Shelf
+    Report](https://depictdatastudio.teachable.com/p/soar-beyond-the-dusty-shelf-report)
+-   Most of these figures were inspired by [The R Graph
+    Gallery](https://r-graph-gallery.com/index.html)
