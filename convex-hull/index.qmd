@@ -25,14 +25,12 @@ format:
 
 ## The Problem
 
-My organization recently developed a stylized map of its
-member states. Instead of fooling around with latitude and
-longitude, we adopted an eye-catching, geometric design,
-which I quite like.
+An organization I used to work for developed a stylized map of its
+member states. I really like its eye-catching, geometric design.
 
 ![The .PNG map](data/2023filledmap_blue.png)
 
-The only issue is that its an image, so I can't make maps
+The only issue is that its an image, so it isn't very practical for data visualization. I can't make maps
 with it. I would love to be able to change the color of each
 state based on its population, median income, or some other
 statistic.
@@ -41,15 +39,15 @@ As I researched the problem, some suggested that I just use
 ArcGIS and trace over the image to create my own polygons.
 There were two problems with that:
 
-1.  I was sure that the resulting polygons wouldn't be an
+1.  Try as I might, I was sure that the resulting polygons wouldn't be an
     exact trace over the image, distorting the work of
-    whoever made this map
+    whoever made this map.
 
 2.  I don't have ArcGIS
 
-Surely there must be a way to do this in R?
-
 ## Solution
+
+Having worked with images before, mostly for ML projects, I set out to find a solution that I could implement in R.
 
 ```{r}
 # to read in the image
@@ -64,19 +62,19 @@ library(dplyr)
 library(ggplot2)
 ```
 
-First, we need to read the image into R.
 
 ```{r}
+# load into R
 img <- png::readPNG("data/2023filledmap_blue.png")
 
 ```
 
-This image is represented as a Large array. PNG files and a
+Images are represented as a large array. PNG files and a
 few other image formats are stored as a matrix of values,
 where each value represents a pixel color.
 
 This is the format we want, but we need to translate it to a
-format that {terra} will understand. For that we can use the
+format that {terra} will understand. You can use the
 `rast()` function.
 
 ```{r}
@@ -97,8 +95,8 @@ operations.
 ### Polygons
 
 In order to be able to *fill in* each state, we need to
-convert this grid of pixels to closed polygons. A shapefile
-must map a state name to polygons, points, or lines. `as.polygons` will trace an outline around the clusters of similar pixel values in the raster.
+convert this grid of pixels to closed polygons. As easy way to do this is to create a shapefile. Essentially, a shapefile is a dataframe with one identifier column and another with a special data type called a geometry (or coordinates). There are three basic types: polygons, lines, and points. Since the states in our PNG are closed shapes, the resulting shapefile
+should map a state name to a column with polygons. The function `as.polygons` will trace an outline around the clusters of similar pixel values in the raster.
 
 ```{r}
 plygns <- terra::as.polygons(img_raster)
@@ -117,24 +115,6 @@ dim(plygns)
 plygns2 <- plygns[2, 1]
 ```
 
-### Another Problem
-
-You may notice that our polygons look a little bit pixelated. Well, they are. This is because when we converted the raster file, we traced the outline of each group of pixels. Pixels, however unfortunately, are square, so our resulting polygons retain these right angles. We can get a closer look if we zoom in.
-
-```{r}
-mask <- ext(430, 470, 250, 300)
-sharp_corners <- terra::crop(plygns2, mask)
-plot(sharp_corners)
-```
-
-Traditionally, to smooth out sharp edges we could use an algorithm like:
-  - [Chaikin's Corner-cutting algorithm](https://www.cs.unc.edu/~dm/UNC/COMP258/LECTURES/Chaikins-Algorithm.pdf)
-  - Kernel smoothing
-  that can be implemented with the [{smoothr} package](https://cran.r-project.org/web/packages/smoothr/vignettes/smoothr.html)
-  
-  
-  <!-- convex hull algorithm -->
-However, these strictly vertex-based approaches won't work because we don't want all the corners to be smooth. We need to somehow preserve the sharp angles present in the original image, but remove the sharp 90-degree ridges that approximate what should be a straight line between two vertices.
 
 <!-- def chaikins_corner_cutting(coords, refinements=5): -->
 <!--     coords = np.array(coords) -->
@@ -170,16 +150,102 @@ order.
 ```{r}
 sf_states <- sf::st_as_sf(multi)
 
-state_keys <- tibble(abb = state.abb, name = state.name)
+state_keys <- tibble(abbr = state.abb, name = state.name)
 
 sf_states <- bind_cols(sf_states, name = c("Delaware", "Maryland", "West Virginia", "Virginia", "Kentucky", "North Carolina", "Tennessee", "Oklahoma", "South Carolina", "Arkansas", "Georgia", "Alabama", "Mississippi", "Louisiana", "Florida", "Texas")
 ) %>% left_join(state_keys) %>%
   select(-lyr.1)
 
-
-
 ggplot(sf_states) + geom_sf(fill = "red") + theme_minimal()
 ```
+
+### Another Problem
+
+You may notice that the states look a little bit pixelated. Well, they are. This is because when converting the raster file, {terra} traced the outline of each group of similar pixels. Pixels, unfortunately, are square, so the resulting polygons retain these right angles. We can get a closer look if we zoom in.
+
+```{r}
+ggplot(sf_states) + geom_sf(fill = "red") + theme_minimal() + coord_sf(xlim= c(580, 620), ylim = c(150, 200))
+
+```
+
+[{smoothr}](https://cran.r-project.org/web/packages/smoothr/vignettes/smoothr.html) offers a couple of tools to smooth out sharp edges:
+  - [Chaikin's Corner-cutting algorithm](https://www.cs.unc.edu/~dm/UNC/COMP258/LECTURES/Chaikins-Algorithm.pdf)
+  - Kernel smoothing
+  
+However, these approaches won't work because we don't want all the corners to be smooth. We need to somehow preserve some of the sharp angles of states present in the original image, but remove the 90-degree that approximate what should be a straight line between two true vertices.
+
+### Enter: Hulls
+
+In conceptualizing this problem, I kept thinking about some way to wrap a kind of blanket around my polygons to smooth out the places with short jagged edges, but still hold their general shape. After some searching, I came across a promising series of answers. A [convex hull algorithm](https://en.wikipedia.org/wiki/Convex_hull_algorithms) will let me trace the outline of a shape and return minimum outline that includes all points in the shape. Sign me up!
+
+To implement it, I have to first turn the polygons into points, which can be done with the handy `extract.vertices` function from {spatialEco}.
+
+```{r}
+library(spatialEco)
+
+state_pts <- sf_states %>%
+  spatialEco::extract.vertices() %>%
+  
+  # combine all points by each state
+  group_by(name, abbr) %>%
+  summarise(geometry = sf::st_combine(geometry))
+
+ggplot(state_pts) + geom_sf(color = "red", size = 2) + theme_minimal() + coord_sf(xlim= c(580, 620), ylim = c(150, 200))
+```
+
+Now that I have the points, I can implement the convex hull algorithm from the {sf} package to outline each with a polygon.
+
+#### Convex
+
+```{r}
+convex_hull <- sf_states %>%
+  group_by(name, abbr) %>%
+  sf::st_convex_hull()
+
+ggplot(convex_hull) + geom_sf(color = "red") + theme_minimal() 
+
+```
+
+#### Concave
+
+```{r}
+concave_hull <- sf_states %>%
+  group_by(name, abbr) %>%
+  sf::st_concave_hull(0.4)
+
+ggplot(concave_hull) + geom_sf(color = "red") + theme_minimal() 
+
+```
+
+This is an abomination. The hull idea didn't help me here.
+
+The convex hull algorithm will contain all points with a polygon, but it is extremely conservative as it will always return the minimum number of sides that will satisfy the requirements. Conversely, the concave hull algorithm looked for any way to shrink the size of the polygons.
+
+I'm sure I could try and optimize these parameters a little bit better, but I don't think this is tackling our problem.
+
+### Simple is better
+
+Back to the drawing board. Before I get too ambitious, one other thing I will try is simply removing some of the extra points. Hopefully I can retain the overall shape of the states while reducing the amount of noise. {st_simplify} handles this nicely. We can set a tolerance for how far a point must be from another for it to survive the simplification process.
+
+```{r}
+new <- sf_states %>%
+  group_by(name, abbr) %>%
+  st_simplify(dTolerance = 2, preserveTopology = TRUE)
+
+ggplot(new) + geom_sf(color = "red") + theme_minimal() + coord_sf(xlim= c(580, 620), ylim = c(150, 200))
+ggplot(new) + geom_sf(color = "red") + theme_minimal()
+
+
+my_agg <- state_pts %>%
+  group_by(name, abbr) %>%
+  
+  aggregate(by = my_grid,
+                FUN = mean,
+            do_union = TRUE)
+```
+
+### RMAPSHAPER
+
 
 If we were planning on including this shapefile with others
 on the same plot, we would want to scale and relocate

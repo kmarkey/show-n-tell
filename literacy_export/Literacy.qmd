@@ -1,0 +1,424 @@
+---
+title: "Literacy in Southern States"
+date: today
+date-format: long
+number-sections: true
+author:
+  - name: Keaton Markey
+    email: keaton.markey@sreb.org
+
+format: 
+  pdf:
+    cap-location: bottom
+    
+keep-tex: true
+---
+
+```{r options}
+options(dplyr.summarise.inform = FALSE)
+```
+
+```{r setup}
+suppressPackageStartupMessages({
+  library(tidyverse)
+  library(kableExtra)
+  library(scales)
+})
+```
+
+# National Assessment of Educational Progress (NAEP)
+
+## Summary
+
+The National Assessment of Educational Progress (NAEP) provides important information about student academic achievement and learning experiences in various subjects. Also known as The Nation’s Report Card, NAEP has provided meaningful results to improve education policy and practice since 1969. Results are available for the nation, states, and 27 urban districts for 4th, 8th, and 12th grade levels. The NAEP is administered by the National Center for Education Statistics (NCES), within the U.S. Department of Education and the Institute of Education Sciences (U.S. Department of Education).
+
+Using the composite reading score, we report the statewide mean and percent of students that meet literacy [at or above the basic level](https://nces.ed.gov/nationsreportcard/reading/achieve.aspx).
+
+```{r}
+nrc <- read_csv("data/nations_report_card.csv", show_col_types = FALSE)
+```
+
+```{r}
+#| fig-align: center
+
+nrc %>%
+  filter(stattype == "MN:MN",
+         jurisLabel == "National",
+         errorFlag != 320) %>%
+  
+  group_by(grade) %>%
+  
+  mutate(label = if_else(year == max(year), as.character(CohortLabel), NA)) %>%
+  
+  ggplot(aes(x = year, y = value, color = CohortLabel)) +
+  
+  geom_line(linewidth = 2) +
+  
+  geom_point(size = 3,
+             shape = 21,
+             fill = "white") +
+  
+  geom_label(aes(label = label), na.rm = TRUE, nudge_x = 1.4, size = 3) +
+  
+  labs(title = "National Average Reading Score",
+       subtitle = "Grade 12 data missing for '07, '11, '17, '22",
+       caption = "Source: The Nation's Report Card") +
+  
+  scale_x_continuous(breaks = c(2005, 2007, 2009, 2011, 2013, 2015, 2017, 2019, 2021, 2023), labels = ~paste0("'", substr(., 3, 4))) +
+  
+  scale_y_continuous(expand = c(0.05, 0, 0, 0)) +
+  coord_cartesian(xlim = c(2005, 2024),
+                  ylim = c(200, 300)) +
+  
+  scale_color_manual(values = c("#00AEC7", "#003087", "#307FE2"),
+                     guide = "none") +
+  theme_light() +
+  
+  theme(
+    panel.grid.minor.x = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    axis.title.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    axis.title.y = element_blank(),
+    title = element_text(size = 11, face = "bold"),
+    plot.subtitle = element_text(size = 9),
+    strip.text = element_text(
+      size = 9,
+      face = "bold",
+      color = "#232b2b",
+    )
+  )
+```
+
+```{r}
+#| fig-align: center
+
+
+nrc %>%
+  filter(stattype == "ALC:AB",
+         jurisLabel == "National",
+         errorFlag != 320) %>%
+  
+  group_by(grade) %>%
+  
+  mutate(label = if_else(year == max(year), as.character(CohortLabel), NA)) %>%
+  
+  ggplot(aes(x = year, y = value, color = CohortLabel)) +
+  
+  geom_line(linewidth = 2) +
+  
+  geom_point(size = 3,
+             shape = 21,
+             fill = "white") +
+  
+  geom_label(aes(label = label), na.rm = TRUE, nudge_x = 1.4, size = 3) +
+  
+  labs(title = "National Percentage At or Above Basic Literacy Level",
+       subtitle = "Grade 12 data missing for '07, '11, '17, '22",
+       caption = "Source: The Nation's Report Card") +
+  
+  scale_x_continuous(breaks = c(2005, 2007, 2009, 2011, 2013, 2015, 2017, 2019, 2021, 2023), labels = ~paste0("'", substr(., 3, 4))) +
+
+  scale_y_continuous(labels = ~ paste0(., "%"), expand = c(0.05, 0, 0, 0)) +
+  
+  coord_cartesian(xlim = c(2005, 2024),
+                  ylim = c(50, 100)) +
+  
+  scale_color_manual(values = c("#00AEC7", "#003087", "#307FE2"),
+                     guide = "none") +
+  theme_light() +
+  
+  theme(
+    panel.grid.minor.x = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    axis.title.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    axis.title.y = element_blank(),
+    title = element_text(size = 11, face = "bold"),
+    plot.subtitle = element_text(size = 9),
+    strip.text = element_text(
+      size = 9,
+      face = "bold",
+      color = "#232b2b",
+    )
+  )
+```
+
+Since 2015, there has been a slight decrease in national literacy measures across the board.
+
+Due to data unavailability, grades 4 and 8 display current data from 2022, grade 12 shows current data from 2019.
+
+```{r}
+val_2015 <- nrc %>%
+  filter(year == 2015,
+         grade == 12,
+         stattype == "MN:MN",
+         jurisdiction == "NT") %>%
+  pull(value)
+
+val_recent <- nrc %>%
+  group_by(CohortLabel) %>%
+  filter(grade == 12,
+         errorFlag != 320,
+         stattype == "MN:MN",
+         jurisdiction == "NT") %>%
+  filter(year == max(year)
+    ) %>%
+  pull(value)
+```
+
+|NAEP Measure          |Grade|2015 |Current| % Change|
+|----------------------|----:|----:|------:|--------:|
+|Average Literacy Score|    4|222.5|  217.5|    -2.3%|
+|Average Literacy Score|    8|265.4|  260.5|    -1.9%|
+|Average Literacy Score|   12|287.0|  285.5|    -0.5%|
+|Percent At Basic Level|    4| 68.8|   62.6|    -9.1%|
+|Percent At Basic Level|    8| 76.0|   69.7|    -8.3%|
+|Percent At Basic Level|   12| 72.0|   70.1|    -2.6%|
+
+```{r}
+library(usmap)
+library(plotly)
+library(rjson)
+library(usmapdata)
+library(ggrepel)
+
+sreb_states_abbr <- c("AL","AR","DE","FL","GA","KY","LA","MD","MS","NC","OK","SC","TN","TX","SC","VA","WV")
+
+sreb_states <- usmap::us_map(regions = "states") %>%
+  
+  filter(abbr %in% sreb_states_abbr)
+
+```
+
+## Percentage of 4th Grade Students At or Above Basic Level (2022)
+
+At the 4th grade level, the majority of SREB states ranked below the national average of 62% achieving basic level literacy. 
+
+```{r}
+#| layout-ncol: 2
+#| fig-cap: ""
+##| tbl-colwidths: [60, 40]
+
+# create df for 4th grade and most recent year
+data <- nrc %>%
+  group_by(CohortLabel) %>%
+  
+  filter(year == 2022,
+         grade == 4,
+         stattype == "ALC:AB") %>%
+  mutate(jurisLabel = ifelse(jurisLabel == "National", "National Avg.", jurisLabel))
+
+p <- data %>%
+  
+  right_join(sreb_states, by = c("jurisdiction" = "abbr")) %>%
+
+  ggplot() + 
+  
+  geom_sf(aes(geometry = geom, 
+              fill = value), 
+                          color = "#232b2b", 
+                          linewidth = 0.2) +
+  
+  # scale_fill_continuous(guide = guide_legend(direction = "vertical", reverse = TRUE)) +
+  
+  scale_fill_distiller(breaks = c(55, 60, 65, 70),
+                       direction = 1,
+                       labels = c("55%", "60%", "65%", "70%"),
+                       guide = guide_legend(direction = "vertical", reverse = TRUE)) +
+  
+  theme(legend.position = c(0.05, 0.7),
+        legend.key.size = unit(0.29, 'in'),
+        legend.text.position = "left",
+        legend.text = element_text(size = 16, hjust = 1),
+        legend.title = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text = element_blank(),
+        axis.title = element_blank(), 
+        panel.background = element_blank(),
+        panel.grid = element_line(color = "transparent"),
+        plot.background = element_rect(color = "transparent"))
+p
+
+data %>%
+  ungroup() %>%
+  dplyr::reframe(jurisLabel, value = paste0(format(round(value, 1), nsmall = 1), "%")) %>%
+  arrange(desc(value)) %>%
+  dplyr::rename("State" = "jurisLabel", "Percentage" = "value") %>%
+  kbl(booktabs = T, linesep = "") %>%
+  kable_styling(position = "right") %>%
+  row_spec(3, italic = TRUE, background = "gray", color = "white")
+```
+
+
+{{< pagebreak >}}
+
+
+## Percentage of 8th Grade Students At or Above Basic Level (2022)
+
+At the 8th grade level, all SREB states ranked below the national average of 70% achieving basic level literacy. Further, where we would expect to see an increase in literacy between 4th and 8th grade, some states like Florida and Mississippi have a lower percentage of literate 8th graders than literate 4th graders.
+
+```{r}
+#| layout-ncol: 2
+#| fig-cap: ""
+##| tbl-colwidths: [60, 40]
+
+# create df for 4th grade and most recent year
+data <- nrc %>%
+  group_by(CohortLabel) %>%
+  
+  filter(year == 2022,
+         grade == 8,
+         stattype == "ALC:AB") %>%
+  mutate(jurisLabel = ifelse(jurisLabel == "National", "National Avg.", jurisLabel))
+
+p <- data %>%
+  
+  right_join(sreb_states, by = c("jurisdiction" = "abbr")) %>%
+
+  ggplot() + 
+  
+  geom_sf(aes(geometry = geom, 
+              fill = value), 
+                          color = "#232b2b", 
+                          linewidth = 0.2) +
+  
+  # scale_fill_continuous(guide = guide_legend(direction = "vertical", reverse = TRUE)) +
+  
+  scale_fill_distiller(breaks = c(62, 64, 66, 68),
+                       direction = 1,
+                       labels = c("62%", "64%", "66%", "68%"),
+                       guide = guide_legend(direction = "vertical", reverse = TRUE)) +
+  
+  theme(legend.position = c(0.05, 0.7),
+        legend.key.size = unit(0.29, 'in'),
+        legend.text.position = "left",
+        legend.text = element_text(size = 16, hjust = 1),
+        legend.title = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text = element_blank(),
+        axis.title = element_blank(), 
+        panel.background = element_blank(),
+        panel.grid = element_line(color = "transparent"),
+        plot.background = element_rect(color = "transparent"))
+p
+
+data %>%
+  ungroup() %>%
+  dplyr::reframe(jurisLabel, value = paste0(format(round(value, 1), nsmall = 1), "%")) %>%
+  arrange(desc(value)) %>%
+  dplyr::rename("State" = "jurisLabel", "Percentage" = "value") %>%
+  kbl(booktabs = T, linesep = "") %>%
+  kable_styling(position = "right") %>%
+  row_spec(1, italic = TRUE, background = "gray", color = "white")
+```
+
+{{< pagebreak >}}
+
+## State Trend Table
+
+```{r}
+name_list <- str_to_lower(unique(nrc %>% filter(jurisLabel != "National") %>% pull(jurisLabel))) %>% gsub(" ", "-", .)
+# download.file("https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/alabama-map-outline-dddddd.png", destfile = "img/myalabama")
+# for (name in name_list){
+# 
+#   xfun::download_file(glue::glue("https://suncatcherstudio.com/uploads/patterns/us-states/map-outlines/svg/{name}-map-outline-dddddd.png", ), #output = glue::glue("img/{name}.png"))
+# )}
+
+```
+
+```{r}
+#| include: false
+str_norm <- function(x){
+  str_to_lower(x) %>% 
+    gsub(" ", "-", .)
+}
+
+# Prep table
+data <- nrc %>%
+  filter(grade %in% c(4, 8),
+         stattype == "ALC:AB",
+         jurisLabel != "National") %>%
+  select(jurisLabel, year, grade, value) %>%
+  group_by(jurisLabel)
+
+data %>%
+  do({
+    p <- ggplot(., aes(x = year, y = value, color = factor(grade))) + 
+      geom_line(linewidth = 1.5) +
+      geom_point(shape = 21, fill = "white", size = 2.5) +
+      scale_color_manual(values = c("#003087", "#00AEC7"), guide = "none") +
+      scale_y_continuous(expand = c(0.1, 0.5)) +
+      theme_void()
+    ggsave(p, filename = paste0("img/fig-", str_norm(unique(.$jurisLabel)), ".png"), width = unit(4, "cm"), height = 0.51)
+    invisible(.)
+    
+  })
+```
+
+```{r}
+#| fig-align: center
+
+# formatting table
+
+data %>%
+  group_by(grade) %>%
+  filter(year %in% c(2005, 2015, 2022)) %>%
+  pivot_wider(names_from = c("year", "grade"),
+              values_from = value) %>%
+  mutate(
+    sparkline = paste0(
+      "\\raisebox{-.4\\height}{\\includegraphics[width=8cm]{img/fig-",
+      str_norm(jurisLabel),
+      ".png}}"
+    ),
+    percent1 = linebreak(paste0(
+      "\\textcolor{domlightblue}{",
+      format(round((`2022_8` - `2005_8`) / `2005_8` * 100, 1), nsmall = 1),
+      "\\%",
+      "}",
+      "\n",
+      "\\textcolor{srebblue}{",
+      format(round((`2022_4` - `2005_4`) / `2005_4` * 100, 1), nsmall = 1),
+      "\\%",
+      "}"
+    ), align = "r"),
+    percent2 = linebreak(paste0(
+      "\\textcolor{domlightblue}{",
+      format(round((`2022_8` - `2015_8`) / `2015_8` * 100, 1), nsmall = 1),
+      "\\%",
+      "}",
+      "\n",
+      "\\textcolor{srebblue}{",
+      format(round((`2022_4` - `2015_4`) / `2015_4` * 100, 1), nsmall = 1),
+      "\\%",
+      "}"
+    ), align = "r")
+  ) %>%
+  select(-`2005_4`,
+         -`2015_4`,
+         -`2022_4`,
+         -`2005_8`,
+         -`2015_8`,
+         -`2022_8`) %>%
+  
+  knitr::kable(
+    booktabs = TRUE,
+    escape = FALSE,
+    format = "latex",
+    linesep = "",
+    col.names = c(
+      "",
+      linebreak("\\hspace{5pt} \\makecell[l]{ Percentage of Students \n At or Above Basic Level} \\hspace{45pt} \\makecell[l]{\\textcolor{domlightblue}{Grade 8} \n \\textcolor{srebblue}{Grade 4}}"),
+      "2005-2022",
+      "2015-2022"
+    )
+  ) %>%
+  kableExtra::row_spec(c(1:15), hline_after = TRUE)
+```
+
+{{< pagebreak >}}
+
+# References
+
+U.S. Department of Education. Institute of Education Sciences, National Center for Education Statistics, National Assessment of Educational Progress (NAEP), 2022 Reading Assessment.

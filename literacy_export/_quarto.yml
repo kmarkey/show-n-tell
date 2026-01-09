@@ -1,0 +1,55 @@
+project:
+  title: TITLE
+
+# options
+include-in-header:
+      text: |
+        \definecolor{srebblue}{HTML}{003087}
+        \definecolor{domblue}{HTML}{307FE2}
+        \definecolor{domgreen}{HTML}{84BD00}
+        \definecolor{domlightblue}{HTML}{00AEC7}
+        \definecolor{accentorange}{HTML}{FFA300}
+# \usepackage{float}
+# \floatplacement{table}{H}
+# \floatplacement{figure}{H}
+        
+fig-pos: "H"
+toc: false
+papersize: letter
+geometry: margin=1in
+mainfont: Arial
+execute:
+  echo: false
+  warning: false
+
+# quarto titlepages options
+format:
+  titlepage-pdf:
+    titlepage: vline 
+    titlepage-logo: "img/SREB white.png"
+    titlepage-footer: "Footer"
+    titlepage-geometry: ["top=0in", "bottom=0in", "right=0in", "left=0pt"]
+    titlepage-theme:
+      elements: ["\\titleblock", "\\authorblock", "\\dateblock", "\\affiliationblock", "\\vfill", "\\footerblock"]
+      page-align: "left"
+      title-style: "plain"
+      title-fontstyle: ["LARGE", "bfseries"]
+      title-space-after: "2\\baselineskip"
+      subtitle-fontstyle: ["LARGE", "textit"]
+      date-fontsize: 14
+      author-style: "plain"
+      author-fontstyle: "large"
+      affiliation-style: "numbered-list"
+      affiliation-fontstyle: "large"
+      affiliation-space-after: "1in"
+      footer-style: "none"
+      footer-fontstyle: "large"
+      logo-size: "0.15\\textheight"
+      logo-space-after: "1\\baselineskip"
+      vrule-width: "2.5in"
+      vrule-space: "0.375in"
+      vrule-align: "left"
+      vrule-color: srebblue
+      vrule-text-color: srebblue
+      vrule-text-fontstyle: ["bfseries", "Large"]
+      vrule-text: "SREB" # needs a character
